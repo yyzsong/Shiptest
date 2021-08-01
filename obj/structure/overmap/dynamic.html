@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../../../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>&#x2F;obj&#x2F;structure&#x2F;overmap&#x2F;dynamic - Shiptest 13</title>
+</head>
+<body>
+<header>
+    <a href="index.html">Shiptest 13</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="obj/structure/overmap/dynamic.html#var">Var Details</a> - <a href="obj/structure/overmap/dynamic.html#proc">Proc Details</a></header>
+<main>
+<h1>dynamic <aside>/<a href="obj.html">obj</a>/<a href="obj/structure/overmap.html">structure/overmap</a>/<a href="obj/structure/overmap/dynamic.html">dynamic</a></aside>
+        
+    
+            <a href="https://github.com/shiptest-ss13/Shiptest/blob/4f2130033b4110f00067c70c389dcd9aca32ec3a/whitesands/code/modules/overmap/dynamic_events.dm#L1">
+        <img src="git.png" width="16" height="16" title="whitesands&#x2F;code&#x2F;modules&#x2F;overmap&#x2F;dynamic_events.dm 1"/></a></h1>
+
+<table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Vars</h2></td></tr>
+            <tr><th><a href="obj/structure/overmap/dynamic.html#var/planet">planet</a></th><td>What kind of planet the level is, if it's a planet at all.</td></tr>
+            <tr><th><a href="obj/structure/overmap/dynamic.html#var/preserve_level">preserve_level</a></th><td>If the level should be preserved. Useful for if you want to build an autismfort or something.</td></tr>
+            <tr><th><a href="obj/structure/overmap/dynamic.html#var/reserve">reserve</a></th><td>The active turf reservation, if there is one</td></tr>
+            <tr><th><a href="obj/structure/overmap/dynamic.html#var/reserve_dock">reserve_dock</a></th><td>The docking port in the reserve</td></tr>
+            <tr><th><a href="obj/structure/overmap/dynamic.html#var/reserve_dock_secondary">reserve_dock_secondary</a></th><td>The docking port in the reserve</td></tr>
+            <tr><th><a href="obj/structure/overmap/dynamic.html#var/template">template</a></th><td>The preset ruin template to load, if/when it is loaded.</td></tr>
+            <tr><th><a href="obj/structure/overmap/dynamic.html#var/virtual_z_level">virtual_z_level</a></th><td>The virtual z-level the level occupies</td></tr><tr><td colspan="2"><h2>Procs</h2></td></tr>
+            <tr><th><a href="obj/structure/overmap/dynamic.html#proc/choose_level_type">choose_level_type</a></th><td>Chooses a type of level for the dynamic level to use.</td></tr>
+            <tr><th><a href="obj/structure/overmap/dynamic.html#proc/load_level">load_level</a></th><td>Load a level for a ship that's visiting the level.</td></tr>
+            <tr><th><a href="obj/structure/overmap/dynamic.html#proc/unload_level">unload_level</a></th><td>Unloads the reserve, deletes the linked docking port, and moves to a random location if there's no client-having, alive mobs.</td></tr></table>
+    <h2 id="var">Var Details</h2><h3 id="var/planet"><aside class="declaration">var </aside>planet
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/shiptest-ss13/Shiptest/blob/4f2130033b4110f00067c70c389dcd9aca32ec3a/whitesands/code/modules/overmap/dynamic_events.dm#L16">
+        <img src="git.png" width="16" height="16" title="whitesands&#x2F;code&#x2F;modules&#x2F;overmap&#x2F;dynamic_events.dm 16"/></a></h3>
+        <p>What kind of planet the level is, if it's a planet at all.</p><h3 id="var/preserve_level"><aside class="declaration">var </aside>preserve_level
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/shiptest-ss13/Shiptest/blob/4f2130033b4110f00067c70c389dcd9aca32ec3a/whitesands/code/modules/overmap/dynamic_events.dm#L14">
+        <img src="git.png" width="16" height="16" title="whitesands&#x2F;code&#x2F;modules&#x2F;overmap&#x2F;dynamic_events.dm 14"/></a></h3>
+        <p>If the level should be preserved. Useful for if you want to build an autismfort or something.</p><h3 id="var/reserve"><aside class="declaration">var </aside>reserve
+            <aside>&ndash; /<a href="datum.html">datum</a>/turf_reservation</aside>
+        
+    
+            <a href="https://github.com/shiptest-ss13/Shiptest/blob/4f2130033b4110f00067c70c389dcd9aca32ec3a/whitesands/code/modules/overmap/dynamic_events.dm#L6">
+        <img src="git.png" width="16" height="16" title="whitesands&#x2F;code&#x2F;modules&#x2F;overmap&#x2F;dynamic_events.dm 6"/></a></h3>
+        <p>The active turf reservation, if there is one</p><h3 id="var/reserve_dock"><aside class="declaration">var </aside>reserve_dock
+            <aside>&ndash; /<a href="obj.html">obj</a>/<a href="obj/docking_port.html">docking_port</a>/stationary</aside>
+        
+    
+            <a href="https://github.com/shiptest-ss13/Shiptest/blob/4f2130033b4110f00067c70c389dcd9aca32ec3a/whitesands/code/modules/overmap/dynamic_events.dm#L10">
+        <img src="git.png" width="16" height="16" title="whitesands&#x2F;code&#x2F;modules&#x2F;overmap&#x2F;dynamic_events.dm 10"/></a></h3>
+        <p>The docking port in the reserve</p><h3 id="var/reserve_dock_secondary"><aside class="declaration">var </aside>reserve_dock_secondary
+            <aside>&ndash; /<a href="obj.html">obj</a>/<a href="obj/docking_port.html">docking_port</a>/stationary</aside>
+        
+    
+            <a href="https://github.com/shiptest-ss13/Shiptest/blob/4f2130033b4110f00067c70c389dcd9aca32ec3a/whitesands/code/modules/overmap/dynamic_events.dm#L12">
+        <img src="git.png" width="16" height="16" title="whitesands&#x2F;code&#x2F;modules&#x2F;overmap&#x2F;dynamic_events.dm 12"/></a></h3>
+        <p>The docking port in the reserve</p><h3 id="var/template"><aside class="declaration">var </aside>template
+            <aside>&ndash; /<a href="datum.html">datum</a>/map_template</aside>
+        
+    
+            <a href="https://github.com/shiptest-ss13/Shiptest/blob/4f2130033b4110f00067c70c389dcd9aca32ec3a/whitesands/code/modules/overmap/dynamic_events.dm#L8">
+        <img src="git.png" width="16" height="16" title="whitesands&#x2F;code&#x2F;modules&#x2F;overmap&#x2F;dynamic_events.dm 8"/></a></h3>
+        <p>The preset ruin template to load, if/when it is loaded.</p><h3 id="var/virtual_z_level"><aside class="declaration">var </aside>virtual_z_level
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/shiptest-ss13/Shiptest/blob/4f2130033b4110f00067c70c389dcd9aca32ec3a/whitesands/code/modules/overmap/dynamic_events.dm#L20">
+        <img src="git.png" width="16" height="16" title="whitesands&#x2F;code&#x2F;modules&#x2F;overmap&#x2F;dynamic_events.dm 20"/></a></h3>
+        <p>The virtual z-level the level occupies</p><h2 id="proc">Proc Details</h2><h3 id="proc/choose_level_type"><aside class="declaration">proc </aside>choose_level_type<aside>() 
+        
+    
+            <a href="https://github.com/shiptest-ss13/Shiptest/blob/4f2130033b4110f00067c70c389dcd9aca32ec3a/whitesands/code/modules/overmap/dynamic_events.dm#L50">
+        <img src="git.png" width="16" height="16" title="whitesands&#x2F;code&#x2F;modules&#x2F;overmap&#x2F;dynamic_events.dm 50"/></a></aside>
+        </h3>
+        <p>Chooses a type of level for the dynamic level to use.</p><h3 id="proc/load_level"><aside class="declaration">proc </aside>load_level<aside>(/<a href="obj.html">obj</a>/<a href="obj/docking_port.html">docking_port</a>/<a href="obj/docking_port/mobile.html">mobile</a>/visiting_shuttle) 
+        
+    
+            <a href="https://github.com/shiptest-ss13/Shiptest/blob/4f2130033b4110f00067c70c389dcd9aca32ec3a/whitesands/code/modules/overmap/dynamic_events.dm#L97">
+        <img src="git.png" width="16" height="16" title="whitesands&#x2F;code&#x2F;modules&#x2F;overmap&#x2F;dynamic_events.dm 97"/></a></aside>
+        </h3>
+        <p>Load a level for a ship that's visiting the level.</p>
+<ul>
+<li>visiting shuttle - The docking port of the shuttle visiting the level.</li>
+</ul><h3 id="proc/unload_level"><aside class="declaration">proc </aside>unload_level<aside>() 
+        
+    
+            <a href="https://github.com/shiptest-ss13/Shiptest/blob/4f2130033b4110f00067c70c389dcd9aca32ec3a/whitesands/code/modules/overmap/dynamic_events.dm#L170">
+        <img src="git.png" width="16" height="16" title="whitesands&#x2F;code&#x2F;modules&#x2F;overmap&#x2F;dynamic_events.dm 170"/></a></aside>
+        </h3>
+        <p>Unloads the reserve, deletes the linked docking port, and moves to a random location if there's no client-having, alive mobs.</p></main>
+<footer>
+    tgstation.dme
+    <a href="https://github.com/shiptest-ss13/Shiptest/tree/4f2130033b4110f00067c70c389dcd9aca32ec3a">4f21300</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/src/dmdoc/README.md">dmdoc 1.4.0</a></footer>
+</body>
+</html>
